@@ -111,6 +111,8 @@ LOCAL_POST_INSTALL_CMD += \
 	ln -sf libOpenCL.so.1 libOpenCL.so;
 endif
 
+LOCAL_SHARED_LIBRARIES := libc++ libc libcutils libdl liblog libm
+
 include $(BUILD_PREBUILT)
 
 endif
